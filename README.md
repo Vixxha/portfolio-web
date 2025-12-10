@@ -1,43 +1,88 @@
-# Astro Starter Kit: Minimal
+🌐 Portfolio Web — Alexis
 
-```sh
+Este proyecto es mi portfolio personal, desarrollado con Astro para ofrecer un sitio rápido, moderno y optimizado. Aquí presento mis habilidades, experiencia, proyectos y formas de contacto de manera clara y profesional.
+
 npm create astro@latest -- --template minimal
-```
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
 
-## 🚀 Project Structure
+🧑‍🚀 ¿Listo para despegar? Este portfolio está construido con Astro, priorizando rendimiento, simplicidad y diseño moderno.
 
-Inside of your Astro project, you'll see the following folders and files:
+🚀 Estructura del Proyecto
 
-```text
+Dentro de este proyecto de Astro encontrarás las siguientes carpetas y archivos:
+
 /
-├── public/
+├── public/             # Archivos estáticos (imágenes, íconos, etc.)
 ├── src/
-│   └── pages/
+│   ├── components/     # Componentes reutilizables
+│   └── pages/          # Páginas principales del sitio
 │       └── index.astro
 └── package.json
-```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+Los archivos .astro y .md en src/pages/ se convierten automáticamente en rutas del sitio.
 
-Any static assets, like images, can be placed in the `public/` directory.
+src/components/ contiene componentes de interfaz y secciones reutilizables.
 
-## 🧞 Commands
+Todo recurso estático debe ubicarse en public/.
 
-All commands are run from the root of the project, from a terminal:
+🎨 Descripción del sitio
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+El portfolio publicado en Netlify presenta:
 
-## 👀 Want to learn more?
+Una sección principal (hero) donde me presento como Desarrollador Full-Stack, con enfoque en desarrollo web moderno, IA y diseño centrado en resultados.
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+Un listado de tecnologías que manejo: Astro, JavaScript, TypeScript, React, TailwindCSS, Node.js, Python, Docker, Git, y más.
+
+Una sección de proyectos, incluyendo sistemas web, dashboards, scraping, proyectos con IA y herramientas full-stack.
+
+Experiencia laboral con roles, responsabilidades y periodos bien definidos.
+
+Certificaciones y formación continua.
+
+Un área de contacto con enlaces a GitHub, LinkedIn y correo.
+
+El diseño prioriza claridad, rendimiento y una experiencia moderna gracias a Astro.
+
+🧞 Comandos Disponibles
+
+Todos los comandos se ejecutan desde la raíz del proyecto, usando una terminal:
+
+Comando	Acción
+npm install	Instala las dependencias
+npm run dev	Inicia el servidor de desarrollo en localhost:4321
+npm run build	Genera la versión de producción en ./dist/
+npm run preview	Previsualiza la build antes de desplegar
+npm run astro ...	Ejecuta comandos de la CLI de Astro
+npm run astro -- --help	Muestra ayuda de la CLI de Astro
+📦 Instalación
+
+Si deseas clonar este proyecto:
+
+git clone https://github.com/Vixxha/portfolio-web
+cd portfolio-web
+npm install
+npm run dev
+
+🎯 Objetivo del Portfolio
+
+Este sitio está diseñado para:
+
+Mostrar mis habilidades técnicas de forma profesional.
+
+Presentar mis proyectos reales, con tecnologías y roles claramente descritos.
+
+Exhibir mi experiencia laboral, certificaciones y formación.
+
+Servir como punto de contacto para reclutadores o posibles colaboradores.
+
+👀 ¿Quieres saber más sobre Astro?
+
+Documentación oficial: https://docs.astro.build
+
+Comunidad en Discord: https://astro.build/chat
+
+📄 Licencia
+
+Este proyecto está disponible bajo la licencia de tu preferencia.
+(Puedo añadir MIT u otra si lo deseas.)
