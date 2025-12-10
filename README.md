@@ -11,13 +11,19 @@ npm create astro@latest -- --template minimal
 
 Dentro de este proyecto de Astro encontrarás las siguientes carpetas y archivos:
 
+
+
+
 /
-├── public/             # Archivos estáticos (imágenes, íconos, etc.)
+├── public/             
 ├── src/
-│   ├── components/     # Componentes reutilizables
-│   └── pages/          # Páginas principales del sitio
+│   ├── components/    
+│   └── pages/          
 │       └── index.astro
 └── package.json
+
+
+
 
 
 Los archivos .astro y .md en src/pages/ se convierten automáticamente en rutas del sitio.
