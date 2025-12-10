@@ -11,7 +11,7 @@ export default function AnimatedTitle({ text }) {
     return (
         <TypeAnimation
             sequence={[
-                "Ingeniero en Formación",
+                "Ingeniero en informática",
                 1500,
                 "Desarrollador Full-Stack",
                 1500,
