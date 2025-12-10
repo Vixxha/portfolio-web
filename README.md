@@ -1,43 +1,101 @@
-# Astro Starter Kit: Minimal
+# 🌐 Portfolio Web — Alexis
 
-```sh
-npm create astro@latest -- --template minimal
-```
+Este proyecto es mi portfolio personal, desarrollado con **Astro** para ofrecer un sitio rápido, moderno y optimizado. Aquí presento mis habilidades, experiencia, proyectos y formas de contacto de manera clara y profesional.
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+> 🧑‍🚀 **¿Listo para despegar?** Este portfolio está construido, priorizando el rendimiento, la simplicidad y un diseño moderno.
 
-## 🚀 Project Structure
+## 🚀 Estructura del Proyecto
 
-Inside of your Astro project, you'll see the following folders and files:
+Dentro de este proyecto de Astro encontrarás las siguientes carpetas y archivos clave:
 
 ```text
 /
-├── public/
+├── public/       # Recursos estáticos (imágenes, favicons, etc.)
 ├── src/
-│   └── pages/
-│       └── index.astro
+│   ├── components/ # Componentes de interfaz reutilizables
+│   ├── pages/      # Rutas del sitio (.astro y .md)
+│   └── index.astro # Página principal
 └── package.json
 ```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+- **`src/pages/`**: Los archivos .astro y .md aquí se convierten automáticamente en rutas del sitio.
+- **`src/components/`**: Contiene componentes de interfaz como Hero, Navbar, Footer, etc.
+- **`public/`**: Todo recurso estático (imágenes, fuentes) debe ubicarse aquí.
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+## 🎨 Descripción del Sitio
 
-Any static assets, like images, can be placed in the `public/` directory.
+El portfolio publicado incluye las siguientes secciones:
 
-## 🧞 Commands
+- **Hero Section**: Introducción como Desarrollador Full-Stack, con enfoque en web moderna e IA.
+- **Tech Stack**: Listado de tecnologías (Astro, JavaScript, TypeScript, React, TailwindCSS, Node.js, Python, Docker, Git, etc.).
+- **Proyectos**: Galería de desarrollos web, dashboards, scraping y herramientas con IA.
+- **Experiencia**: Trayectoria laboral con roles y responsabilidades definidos.
+- **Certificaciones**: Logros y formación continua.
+- **Contacto**: Enlaces a GitHub, LinkedIn y correo electrónico.
 
-All commands are run from the root of the project, from a terminal:
+## 🧞 Comandos Disponibles
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+Todos los comandos se ejecutan desde la raíz del proyecto en la terminal:
 
-## 👀 Want to learn more?
+| Comando | Acción |
+| :--- | :--- |
+| `npm install` | Instala las dependencias del proyecto |
+| `npm run dev` | Inicia el servidor de desarrollo en `localhost:4321` |
+| `npm run build` | Genera la versión de producción en `./dist/` |
+| `npm run preview` | Previsualiza la build antes de desplegar |
+| `npm run astro ...` | Ejecuta comandos de la CLI de Astro (ej. `astro add`) |
+| `npm run astro -- --help` | Muestra ayuda de la CLI de Astro |
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+## 📦 Instalación
+
+Si deseas clonar y ejecutar este proyecto localmente:
+
+```bash
+git clone https://github.com/Vixxha/portfolio-web
+cd portfolio-web
+npm install
+npm run dev
+```
+
+## 🎯 Objetivo
+
+- **Profesionalismo**: Mostrar habilidades técnicas de alto nivel.
+- **Evidencia**: Presentar proyectos reales y experiencia comprobable.
+- **Conexión**: Servir como punto de contacto efectivo para oportunidades laborales.
+
+## 👀 Más sobre Astro
+
+- Documentación oficial: [https://docs.astro.build](https://docs.astro.build)
+- Comunidad en Discord: [https://astro.build/chat](https://astro.build/chat)
+
+## 📄 Licencia
+
+Este proyecto está disponible bajo la licencia **MIT**.
+
+---
+
+# 🇬🇧 English Summary
+
+## Web Portfolio — Alexis
+
+This is my personal portfolio, built with **Astro** for speed, performance, and modern design. It showcases my skills, experience, and projects in a professional manner.
+
+### Key Features
+- **Hero Section**: Intro as a Full-Stack Developer.
+- **Tech Stack**: Javascript, TypeScript, React, Astro, Python, Docker, etc.
+- **Projects**: Showcase of web systems, dashboards, and AI tools.
+- **Experience & Contact**: Professional background and links to GitHub/LinkedIn.
+
+### Quick Start
+
+```bash
+# Clone the repo
+git clone https://github.com/Vixxha/portfolio-web
+cd portfolio-web
+
+# Install dependencies
+npm install
+
+# Start dev server
+npm run dev
+```
