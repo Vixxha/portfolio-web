@@ -1,0 +1,48 @@
+---
+import portfolioData from "../data/portfolio.json";
+
+const { experience } = portfolioData;
+---
+
+<section id="experience" class="py-20 px-4 max-w-4xl mx-auto">
+    <h2
+        data-aos="fade-down"
+        class="text-4xl md:text-5xl font-bold text-center mb-16 bg-gradient-to-r from-indigo-500 to-purple-500 bg-clip-text text-transparent"
+    >
+        {experience.title}
+    </h2>
+
+    <div class="relative border-l-2 border-zinc-800 ml-4 md:ml-0 space-y-12">
+        {
+            experience.items.map((job, index) => (
+                <div
+                    data-aos="fade-up"
+                    data-aos-delay={index * 100}
+                    class="relative pl-8 md:pl-12 group"
+                >
+                    {/* Timeline Dot */}
+                    <div class="absolute -left-[9px] top-0 w-4 h-4 bg-indigo-500 rounded-full border-4 border-zinc-950 group-hover:scale-125 transition-transform duration-300 shadow-[0_0_10px_rgba(99,102,241,0.5)]" />
+
+                    <div class="space-y-4">
+                        <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-2">
+                            <h3 class="text-2xl font-bold text-zinc-100 group-hover:text-indigo-400 transition-colors">
+                                {job.company}
+                            </h3>
+                            <span class="text-sm font-medium text-zinc-500 bg-zinc-900/50 px-3 py-1 rounded-full border border-zinc-800">
+                                {job.period}
+                            </span>
+                        </div>
+
+                        <div class="text-lg font-medium text-indigo-300">
+                            {job.role}
+                        </div>
+
+                        <p class="text-zinc-400 leading-relaxed">
+                            {job.description}
+                        </p>
+                    </div>
+                </div>
+            ))
+        }
+    </div>
+</section>

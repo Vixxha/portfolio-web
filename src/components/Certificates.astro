@@ -1,0 +1,55 @@
+---
+import portfolioData from "../data/portfolio.json";
+const { certificates } = portfolioData;
+---
+
+<section id="certificates" class="py-20 px-4 max-w-7xl mx-auto">
+    <h2
+        data-aos="fade-down"
+        class="text-4xl md:text-5xl font-bold text-center mb-16 bg-gradient-to-r from-indigo-500 to-purple-500 bg-clip-text text-transparent"
+    >
+        {certificates.title}
+    </h2>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {
+            certificates.items.map((cert, index) => (
+                <a
+                    href={cert.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    data-aos="fade-up"
+                    data-aos-delay={index * 100}
+                    class="group block bg-zinc-900/50 border border-zinc-800 rounded-xl p-6 hover:border-indigo-500/50 hover:bg-zinc-900 transition-all duration-300 hover:-translate-y-1"
+                >
+                    <div class="flex justify-between items-start mb-4">
+                        <div class="p-3 bg-indigo-500/10 rounded-lg text-indigo-400 group-hover:text-indigo-300 transition-colors">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                class="h-6 w-6"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke="currentColor"
+                            >
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="2"
+                                    d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                                />
+                            </svg>
+                        </div>
+                        <span class="text-xs font-medium text-zinc-500 border border-zinc-800 px-2 py-1 rounded-full group-hover:border-zinc-700 transition-colors">
+                            {cert.date}
+                        </span>
+                    </div>
+
+                    <h3 class="text-lg font-bold text-zinc-100 mb-1 group-hover:text-indigo-400 transition-colors">
+                        {cert.title}
+                    </h3>
+                    <p class="text-sm text-zinc-400">{cert.issuer}</p>
+                </a>
+            ))
+        }
+    </div>
+</section>

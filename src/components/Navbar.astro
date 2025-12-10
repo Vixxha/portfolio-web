@@ -1,0 +1,57 @@
+---
+import portfolioData from '../data/portfolio.json';
+const { navbar } = portfolioData;
+---
+
+<nav class="fixed top-4 left-1/2 -translate-x-1/2 w-[95%] max-w-3xl z-50">
+    <div class="bg-zinc-900/80 backdrop-blur-md border border-zinc-800 rounded-full px-6 py-3 shadow-xl flex items-center justify-between">
+        <a href="#home" class="text-xl font-bold text-zinc-100 hover:text-indigo-400 transition-colors">
+            {navbar.logo}
+        </a>
+
+        <!-- Desktop Menu -->
+        <ul class="hidden md:flex gap-6 items-center">
+            {navbar.links.map(link => (
+                <li>
+                    <a href={link.href} class="text-sm font-medium text-zinc-400 hover:text-white transition-colors">
+                        {link.label}
+                    </a>
+                </li>
+            ))}
+            <li>
+                <a href={navbar.cta.href} class="px-4 py-2 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-medium rounded-full transition-colors">
+                    {navbar.cta.label}
+                </a>
+            </li>
+        </ul>
+
+        <!-- Mobile Menu Button -->
+        <button id="mobile-menu-btn" class="md:hidden text-zinc-400 hover:text-white">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+            </svg>
+        </button>
+    </div>
+
+    <!-- Mobile Menu Dropdown -->
+    <div id="mobile-menu" class="hidden absolute top-full left-0 w-full mt-2 bg-zinc-900/95 backdrop-blur-md border border-zinc-800 rounded-2xl p-4 shadow-xl flex-col gap-4">
+        {navbar.links.map(link => (
+            <a href={link.href} class="text-zinc-400 hover:text-white block py-2 px-4 hover:bg-zinc-800 rounded-lg transition-colors">
+                {link.label}
+            </a>
+        ))}
+        <a href={navbar.cta.href} class="block py-2 px-4 bg-indigo-600 hover:bg-indigo-700 text-white text-center rounded-lg transition-colors">
+            {navbar.cta.label}
+        </a>
+    </div>
+</nav>
+
+<script>
+    const btn = document.getElementById('mobile-menu-btn');
+    const menu = document.getElementById('mobile-menu');
+
+    btn?.addEventListener('click', () => {
+        menu?.classList.toggle('hidden');
+        menu?.classList.toggle('flex');
+    });
+</script>

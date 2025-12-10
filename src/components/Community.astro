@@ -1,0 +1,62 @@
+---
+const communities = [
+    {
+        name: "Junior Achievement",
+        role: "Mentor & Voluntario",
+        description:
+            "Apoyo a jóvenes en el desarrollo de proyectos tecnológicos y emprendimiento.",
+        image: "https://placehold.co/100x100/27272a/white?text=JA",
+    },
+    {
+        name: "INACAP",
+        role: "Expositor",
+        description:
+            "Participación como expositor en eventos educativos y tecnológicos.",
+        image: "https://placehold.co/100x100/27272a/white?text=INACAP",
+    },
+];
+---
+
+<section id="community" class="py-20 px-4 max-w-7xl mx-auto bg-zinc-900/30">
+    <div class="max-w-4xl mx-auto text-center">
+        <h2
+            data-aos="fade-down"
+            class="text-4xl md:text-5xl font-bold mb-12 bg-gradient-to-r from-indigo-500 to-purple-500 bg-clip-text text-transparent"
+        >
+            Community & Speaking
+        </h2>
+        <p data-aos="fade-up" class="text-xl text-zinc-400 mb-16">
+            Creo firmemente en devolver a la comunidad lo que he aprendido.
+            Participo activamente en iniciativas educativas.
+        </p>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {
+                communities.map((item, index) => (
+                    <div
+                        data-aos="fade-up"
+                        data-aos-delay={index * 100}
+                        class="bg-zinc-900 p-8 rounded-2xl border border-zinc-800 flex items-center gap-6 hover:bg-zinc-800/80 transition-colors community-card"
+                    >
+                        <img
+                            src={item.image}
+                            alt={item.name}
+                            class="w-16 h-16 rounded-full object-cover border-2 border-indigo-500/50"
+                        />
+                        <div class="text-left">
+                            <h3 class="text-xl font-bold text-zinc-100">
+                                {item.name}
+                            </h3>
+                            <p class="text-indigo-400 text-sm font-medium mb-1">
+                                {item.role}
+                            </p>
+                            <p class="text-zinc-400 text-sm">
+                                {item.description}
+                            </p>
+                        </div>
+                    </div>
+                ))
+            }
+        </div>
+    </div>
+</section>

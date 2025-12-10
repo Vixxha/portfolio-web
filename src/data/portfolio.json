@@ -1,0 +1,262 @@
+{
+    "navbar": {
+        "logo": "Alexis",
+        "links": [
+            {
+                "label": "Inicio",
+                "href": "#home"
+            },
+            {
+                "label": "Sobre mí",
+                "href": "#about"
+            },
+            {
+                "label": "Proyectos",
+                "href": "#projects"
+            },
+            {
+                "label": "Experiencia",
+                "href": "#experience"
+            },
+            {
+                "label": "Certificaciones",
+                "href": "#certificates"
+            }
+        ],
+        "cta": {
+            "label": "Contáctame",
+            "href": "#contact"
+        }
+    },
+    "hero": {
+        "title": "Ingeniero en Informática & Desarrollador Full-Stack",
+        "subtitle": "Fusiono el desarrollo web moderno con Inteligencia Artificial y diseño orientado a resultados. Construyo aplicaciones limpias, rápidas y escalables.",
+        "buttons": [
+            {
+                "label": "Ver Proyectos",
+                "href": "#projects",
+                "primary": true
+            },
+            {
+                "label": "Descargar CV",
+                "href": "/cv.pdf",
+                "primary": false
+            },
+            {
+                "label": "Contáctame",
+                "href": "#contact",
+                "primary": false
+            }
+        ],
+        "image": "/imgs/hero-cards.png"
+    },
+    "about": {
+        "title": "Sobre Mí",
+        "description": "Soy un desarrollador Full-Stack en formación con enfoque en soluciones modernas basadas en IA, automatización y construcción de interfaces eficientes. Me especializo en crear proyectos limpios, escalables y orientados a experiencia de usuario.",
+        "highlights": [
+            "Experiencia desarrollando APIs y Front-Ends modernos",
+            "Integración de Inteligencia Artificial en sistemas reales",
+            "En constante aprendizaje y mejora continua"
+        ]
+    },
+    "services": {
+        "title": "Servicios",
+        "items": [
+            {
+                "title": "Desarrollo Full-Stack",
+                "description": "Aplicaciones completas, rápidas y escalables con buenas prácticas."
+            },
+            {
+                "title": "Automatización con IA",
+                "description": "Integración de modelos de inteligencia artificial en sistemas reales."
+            },
+            {
+                "title": "Landing Pages y Portfolios",
+                "description": "Diseños profesionales y modernos enfocados en conversión."
+            }
+        ]
+    },
+    "techStack": {
+        "title": "Tecnologías",
+        "items": [
+            {
+                "name": "Astro",
+                "icon": "astro"
+            },
+            {
+                "name": "JavaScript",
+                "icon": "javascript"
+            },
+            {
+                "name": "TypeScript",
+                "icon": "typescript"
+            },
+            {
+                "name": "React",
+                "icon": "react"
+            },
+            {
+                "name": "TailwindCSS",
+                "icon": "tailwindcss"
+            },
+            {
+                "name": "Node.js",
+                "icon": "nodedotjs"
+            },
+            {
+                "name": "MySQL",
+                "icon": "mysql"
+            },
+            {
+                "name": "PostgreSQL",
+                "icon": "postgresql"
+            },
+            {
+                "name": "Python",
+                "icon": "python"
+            },
+            {
+                "name": "Docker",
+                "icon": "docker"
+            },
+            {
+                "name": "Git",
+                "icon": "git"
+            },
+            {
+                "name": "OpenAI",
+                "icon": "openai"
+            }
+        ]
+    },
+    "projects": {
+        "title": "Mis Proyectos",
+        "list": [
+            {
+                "title": "Innovation Camp HP 2023 – COMEDUC",
+                "tag": "Innovación / Competencia",
+                "description": "Competencia organizada por Comeduc, Junior Achievement Chile y HP Chile, enfocada en fomentar la innovación tecnológica. Participaron seis liceos con la especialidad de Programación. El primer lugar fue obtenido por el equipo PROGR@M3R del Insuco 2, del cual formé parte, desarrollando una solución tecnológica innovadora para un problema real.",
+                "image": "https://d2okgo8klvqgzu.cloudfront.net/2023/08/10112048/not-ago-25.jpg",
+                "links": {
+                    "leer articulo": "https://www.comeduc.cl",
+                    "github": "#"
+                }
+            },
+            {
+                "title": "ANFA System",
+                "tag": "Dashboard",
+                "description": "Proyecto web desarrollado con Django, utilizando templates, rutas dinámicas, modelos y autenticación. Incluye gestión de datos, vistas personalizadas y un entorno full-stack estructurado para prácticas y despliegues iniciales.",
+                "image": "/projects/anfa.webp",
+                "links": {
+                    "demo": "#",
+                    "github": "https://github.com/Vixxha/Web_con_django"
+                }
+            },
+            {
+                "title": "App ciegos (Proximamente)",
+                "tag": "Kotlin / Android",
+                "description": "Aplicación móvil desarrollada en Kotlin que utiliza CameraX y OpenCV para procesar la imagen en tiempo real, detectando contornos y resaltando elementos del entorno para mejorar la accesibilidad visual. Incluye integración de OpenCV nativa, pipeline optimizado y reconocimiento estructural en vivo.",
+                "image": "/projects/app_ciegos.webp",
+                "links": {
+                    "demo": "#",
+                    "github": "https://github.com/Vixxha/App_ciegos_version0.1"
+                }
+            },
+            {
+                "title": "Junior Achievement – EtMDay 2024",
+                "tag": "Voluntariado / Presentación",
+                "description": "Participación en EtMDay 2024 representando a Junior Achievement Chile en el Escenario Oriente. Se presentaron experiencias educativas de impacto, junto a voluntarios de Oracle, EY y Mercado Pago, inspirando a más de 80 jóvenes a explorar el emprendimiento y la innovación.",
+                "image": "https://static.wixstatic.com/media/e570c1_2ca9775baf0b45129bfe8b130366b9c6~mv2.jpg/v1/fill/w_700,h_407,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/e570c1_2ca9775baf0b45129bfe8b130366b9c6~mv2.jpg",
+                "links": {
+                    "demo": "https://www.jachile.org/post/junior-achievement-chile-en-etmday-2024",
+                    "github": "#"
+                }
+            },
+            {
+                "title": "web scraping",
+                "tag": "TypeScript / Web Scraping",
+                "description": "Aplicación de web scraping capaz de obtener, procesar y visualizar información desde múltiples fuentes. Incluye automatización, limpieza de datos y extracción estructurada, optimizando flujos de análisis y recopilación masiva de información.",
+                "image": "/projects/webscrapign.webp",
+                "links": {
+                    "demo": "https://studio--studio-8944923670-3a74f.us-central1.hosted.app",
+                    "github": "https://github.com/Vixxha/Proyecto-sw-web-scraping-2"
+                }
+            }
+        ]
+    },
+    "experience": {
+        "title": "Experiencia Profesional",
+        "items": [
+            {
+                "company": "Junior Achievement Chile – EtMDay 2024",
+                "role": "Expositor y Voluntario Tecnológico",
+                "period": "2024",
+                "description": "Participación en el Escenario Oriente de EtMDay 2024, presentando el impacto de los programas educativos de Junior Achievement Chile junto a voluntarios de Oracle, EY y Mercado Pago. Se inspiró a más de 80 jóvenes a explorar el emprendimiento y la innovación."
+            },
+            {
+                "company": "ANFA – Asociación Nacional de Fútbol Amateur",
+                "role": "Desarrollador Full-Stack",
+                "period": "2024 Enero – Abril",
+                "description": "Desarrollo de plataformas internas, dashboards, mejoramiento de procesos y soporte técnico integral."
+            },
+            {
+                "company": "ANFA – Asociación Nacional de Fútbol Amateur",
+                "role": "Administrador de Base de Datos y Virtualización Junior (Práctica Profesional)",
+                "period": "2024 Enero – Abril",
+                "description": "Migración, ordenamiento y modernización de bases de datos, apoyo en virtualización y soporte técnico en terreno para continuidad operativa."
+            },
+            {
+                "company": "Junior Achievement Chile / HP Innovation Camp",
+                "role": "Desarrollador Web y Colaborador en Prototipo de IA",
+                "period": "2023",
+                "description": "Desarrollo del sitio web de presentación, integración de prototipo de visión por computadora con OpenCV y coordinación técnica en un equipo multidisciplinario (1er lugar del certamen)."
+            }
+        ]
+    },
+    "certificates": {
+        "title": "Certificaciones",
+        "items": [
+            {
+                "title": "Título Técnico Nivel Medio en Programación",
+                "issuer": "Liceo Comercial Insuco 2",
+                "date": "2023",
+                "link": "https://drive.google.com/file/d/1z9VFgZeYvYK4WcqK2bYtAwX9b_-tBjQ8/view"
+            },
+            {
+                "title": "Introducción a la Ciberseguridad",
+                "issuer": "Cisco Networking Academy",
+                "date": "2023",
+                "link": "https://drive.google.com/file/d/1KQsz2QnkXGgBvRJ6O4paumvBaMBUWj1o/view"
+            },
+            {
+                "title": "Design Thinking",
+                "issuer": "IBM SkillsBuild",
+                "date": "2023",
+                "link": "https://drive.google.com/file/d/1fvubhCRdLao3KWAkZeZGTFs2wW8lbrin/view"
+            },
+            {
+                "title": "Introducción a la Programación",
+                "issuer": "Cisco Networking Academy",
+                "date": "2023",
+                "link": "https://drive.google.com/file/d/1oImNd9AIY1Eb0vd9ctO9WivpcL8dBVUN/view"
+            }
+        ]
+    },
+    "contact": {
+        "title": "Contacto",
+        "email": "alexisortega1928@gmail.com",
+        "socials": [
+            {
+                "label": "GitHub",
+                "href": "https://github.com/vixxha"
+            },
+            {
+                "label": "LinkedIn",
+                "href": "https://linkedin.com/in/alexisortegacaruso"
+            }
+        ]
+    },
+    "footer": {
+        "text": "© 2025 Alexis Ortega – Todos los derechos reservados"
+    }
+}

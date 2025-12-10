@@ -1,0 +1,29 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Hero from "../components/Hero.astro";
+import About from "../components/About.astro";
+import Services from "../components/Services.astro";
+import TechStack from "../components/TechStack.astro";
+import Projects from "../components/Projects.astro";
+import Experience from "../components/Experience.astro";
+import Certificates from "../components/Certificates.astro";
+import Contact from "../components/Contact.astro";
+---
+
+<Layout title="Portafolio Web | Alex">
+	<main class="relative w-full overflow-hidden">
+		<div
+			class="fixed inset-0 -z-10 h-full w-full bg-zinc-950 bg-[radial-gradient(#27272a_1px,transparent_1px)] [background-size:16px_16px]"
+		>
+		</div>
+
+		<Hero />
+		<About />
+		<Services />
+		<TechStack />
+		<Projects />
+		<Experience />
+		<Certificates />
+		<Contact />
+	</main>
+</Layout>

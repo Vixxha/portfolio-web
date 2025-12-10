@@ -1,0 +1,73 @@
+---
+import portfolioData from "../data/portfolio.json";
+import AnimatedTitle from "./AnimatedTitle.jsx";
+
+const { hero } = portfolioData;
+---
+
+<section
+    id="home"
+    class="min-h-screen flex flex-col md:flex-row items-center justify-center gap-16 px-4 py-20 max-w-7xl mx-auto"
+>
+    <div
+        data-aos="fade-right"
+        class="flex-1 space-y-8 hero-content order-2 md:order-1 text-center md:text-left"
+    >
+        <div class="space-y-4">
+            <div
+                class="text-5xl md:text-7xl font-bold leading-tight min-h-[1.2em]"
+            >
+                <AnimatedTitle client:visible text={hero.title} />
+            </div>
+            <p class="text-xl md:text-2xl text-zinc-300 font-medium">
+                {hero.subtitle}
+            </p>
+        </div>
+
+        <div class="flex flex-wrap gap-4 justify-center md:justify-start pt-4">
+            {
+                hero.buttons.map((btn) => (
+                    <a
+                        href={btn.href}
+                        class={`px-6 py-3 rounded-full font-medium transition-colors ${
+                            btn.primary
+                                ? "bg-[#8758ff] hover:bg-[#7a4ee6] text-white shadow-lg shadow-indigo-500/20"
+                                : "border border-zinc-700 hover:border-zinc-500 text-zinc-300"
+                        }`}
+                    >
+                        {btn.label}
+                    </a>
+                ))
+            }
+        </div>
+    </div>
+
+    <div
+        data-aos="fade-left"
+        class="relative w-full max-w-md flex-1 order-1 md:order-2 hero-image flex justify-center"
+    >
+        <div
+            class="relative w-64 h-64 md:w-80 md:h-80 rounded-2xl overflow-hidden border-4 border-zinc-800 shadow-2xl rotate-3 hover:rotate-0 transition-all duration-500"
+        >
+            {
+                /* Using a placeholder if the image path is local and doesn't exist yet, or use the provided path */
+            }
+            <img
+                src="/projects/Alex.webp"
+                alt="Hero"
+                class="w-full h-full object-cover"
+            />
+        </div>
+    </div>
+</section>
+
+<script>
+    import { animate, stagger } from "motion";
+
+    animate(".hero-content", { opacity: [0, 1], y: [20, 0] }, { duration: 1 });
+    animate(
+        ".hero-image",
+        { opacity: [0, 1], y: [20, 0] },
+        { duration: 1, delay: 0.5 },
+    );
+</script>

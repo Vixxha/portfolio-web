@@ -1,0 +1,19 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Mi CV | Portafolio Web">
+    <main class="min-h-screen pt-20 pb-10 px-4 flex flex-col items-center">
+        <h1 class="text-3xl font-bold mb-8 text-zinc-100">Mi Curriculum Vitae</h1>
+        
+        <div class="w-full max-w-5xl h-[80vh] bg-zinc-900 rounded-xl overflow-hidden border border-zinc-800 shadow-2xl">
+            <iframe src="/cv.pdf" class="w-full h-full border-none"></iframe>
+        </div>
+        
+        <div class="mt-8">
+            <a href="/" class="text-zinc-400 hover:text-white transition-colors flex items-center gap-2">
+                &larr; Volver al inicio
+            </a>
+        </div>
+    </main>
+</Layout>

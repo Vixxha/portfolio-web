@@ -1,0 +1,44 @@
+---
+import "../styles/global.css";
+import Navbar from "../components/Navbar.astro";
+import Footer from "../components/Footer.astro";
+
+interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="es" class="scroll-smooth">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="Portafolio Web" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+		<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+	</head>
+	<body
+		class="bg-zinc-950 text-zinc-100 font-sans antialiased selection:bg-[#8758ff] selection:text-white relative"
+	>
+		<div
+			class="fixed inset-0 -z-10 h-full w-full bg-zinc-950 bg-[radial-gradient(#27272a_1px,transparent_1px)] [background-size:16px_16px] opacity-10"
+		>
+		</div>
+		<Navbar />
+		<slot />
+		<Footer />
+
+		<script is:inline src="https://unpkg.com/aos@next/dist/aos.js"></script>
+		<script is:inline>
+			AOS.init({
+				duration: 800,
+				offset: 100,
+				once: true,
+			});
+		</script>
+	</body>
+</html>
