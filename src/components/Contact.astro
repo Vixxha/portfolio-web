@@ -10,7 +10,7 @@ const { contact } = portfolioData;
 
     <div
         data-aos="zoom-in"
-        class="bg-zinc-900/50 border border-zinc-800 rounded-2xl p-8 md:p-12"
+        class="bg-gradient-to-br from-zinc-900/50 to-zinc-900/80 backdrop-blur-sm border border-zinc-800/50 rounded-3xl p-8 md:p-12 shadow-2xl"
     >
         <p class="text-zinc-400 text-lg mb-8">
             ¿Tienes un proyecto en mente o simplemente quieres saludar? ¡Envíame
@@ -19,23 +19,27 @@ const { contact } = portfolioData;
 
         <a
             href={`mailto:${contact.email}`}
-            class="inline-flex items-center gap-2 px-8 py-4 bg-indigo-600 hover:bg-indigo-700 text-white rounded-full font-bold text-lg transition-all hover:scale-105 shadow-xl shadow-indigo-500/20 mb-12"
+            class="group w-full max-w-lg mx-auto flex flex-col sm:flex-row items-center justify-center gap-3 px-6 py-4 sm:px-8 sm:py-5 bg-gradient-to-r from-indigo-600 to-violet-600 hover:from-indigo-500 hover:to-violet-500 text-white rounded-2xl font-bold text-base sm:text-lg transition-all hover:scale-[1.02] shadow-xl shadow-indigo-500/25 mb-12"
         >
-            <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-6 w-6"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
+            <div
+                class="p-2 bg-white/10 rounded-full group-hover:bg-white/20 transition-colors"
             >
-                <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
-                ></path>
-            </svg>
-            {contact.email}
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-6 w-6"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                >
+                    <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                    ></path>
+                </svg>
+            </div>
+            <span class="break-all sm:break-normal">{contact.email}</span>
         </a>
 
         <div class="flex justify-center gap-6">
