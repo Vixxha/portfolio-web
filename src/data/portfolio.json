@@ -1,6 +1,6 @@
 {
     "navbar": {
-        "logo": "Jona",
+        "logo": "Alexis",
         "links": [
             {
                 "label": "Inicio",
@@ -29,7 +29,7 @@
         }
     },
     "hero": {
-        "title": "xupalo jona",
+        "title": "Ingeniero en Informática & Desarrollador Full-Stack",
         "subtitle": "Fusiono desarrollo web moderno con inteligencia artificial y un diseño enfocado en resultados. Creo aplicaciones eficientes, escalables y de alto rendimiento, priorizando la claridad, la velocidad y la experiencia del usuario.",
         "buttons": [
             {
